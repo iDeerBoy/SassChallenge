@@ -1,0 +1,240 @@
+#banner{
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+
+        .bannerR{
+            width: 922px;
+            padding: 100px 0 0 228px;
+
+                h1{
+                    font-size: 80px;
+                    font-weight: 600;
+                    line-height: 85px;
+                    color: $morado01;
+                    margin-bottom: 35px;
+                }
+
+                p{
+                    font-size: 15px;
+                    font-weight: 600;
+                    color: $azul02;
+                    margin-bottom: 35px;
+                }
+
+                button{
+                    width: 210px;
+                    height: 70px;
+                    border-radius: 15px;
+                    font-size: 15px;
+                    font-weight: 700;
+                    outline: none;
+                    transition: all .3s ease;
+                    border: 2px solid $azul01;
+                    background-color: $azul01;
+                    color: $blanco;
+
+                        &:hover{
+                            background-color: $blanco;
+                            color: $azul01;                            
+                        }
+                }
+                
+                .triangulo01{
+                    width: 45px;
+                    height: 45px;
+                    background-color: $azul03;
+                    margin-top: 45px;
+                    clip-path: polygon(0 0, 50% 50%, 100% 100%, 0 100%);
+                    transform: translateX(-100px);
+                }
+        }
+
+        .bannerL{
+            width: 678px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: relative;
+
+                .triangulos{
+                    width: 50%;
+                    height: 322px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    
+                        .triangulo02{
+                            width: 50%;
+                            height: 50%;
+                            background-color: $azul01;
+                            clip-path: polygon(0 0, 50% 50%, 100% 100%, 0 100%);
+
+                                &:nth-child(2), &:nth-child(4){
+                                    background-color: $azul03;
+                                }
+                        }
+                }
+
+                .circulos{
+                    width: 50%;
+                    height: 322px;
+
+                        .circulo01{
+                            width: 100%;
+                            height: 50%;
+                            background-color: $rojo02;
+                            clip-path: circle(60.5% at 50% 0);
+
+                                &:last-child{
+                                    background-color: $rojo01;
+                                    clip-path: circle(60.5% at 50% 100%);
+                                }
+                        }
+                }
+
+                .news{
+                    position: relative;
+                    left: -37px;
+                    width: 243px;
+                    height: 213px;
+                    margin-top: 64px;
+                    background-color: $azul05;
+                    border-radius: 20px;
+                    padding: 40px;
+
+                        p:first-child{
+                            color: $azul01;
+                            font-size: 12px;
+                            font-weight: 700;
+                            background-color: $azul04;
+                            display: inline-block;
+                            padding: 11px;
+                            border-radius: 10px;
+                            margin-bottom: 18px;
+                        }
+
+                        h3{
+                            font-size: 20px;
+                            font-weight: 600;
+                            color: $morado02;
+                            margin-bottom: 10px;
+                            
+                        }
+
+                        p:last-child{
+                            font-size: 15px;
+                            font-weight: 700;
+                            color: $azul02;
+                        }
+                }
+
+                .arcos{    
+                    width: 50%;
+                    height: 322px;
+                    display: flex;
+
+                        .arco01{
+                            width: 50%;
+                            height: 100%;
+                            background-color: $amarillo01;
+
+                                &:last-child{
+                                    clip-path: circle(64% at 0 50%);
+                                }
+                        }
+                }
+
+                .sjab{
+                    position: absolute;
+                    top: 106px;
+                    left: 169px;
+                    width: 400px;
+                    background-color: #ffffff;
+                    padding: 50px 40px 40px;
+                    border-radius: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 3px 3px 5px  rgba(0, 0, 0, 0.1);
+
+                        &>i{
+                            display: inline-block;
+                            color: $azul01;
+                            font-size: 40px;
+                        }
+
+                        h2{
+                            display: inline;
+                            font-size: 25px;
+                            color: $morado02;
+                            margin-left: 20px;
+                            font-weight: 600;
+                        }
+
+                        ul{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            list-style: none;
+                            margin-top: 50px;
+
+                                li{
+                                    width: 48%;
+                                    height: 110px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    border-radius: 10px;
+                                    margin-bottom: 15px;
+
+                                        i{
+                                            font-size: 25px;
+                                            margin-bottom: 10px;
+                                        }
+
+                                        p{
+                                            font-size: 12px;
+                                            color: $morado02;
+                                            font-weight: 600;                                            
+                                        }
+                                }
+
+                                .rojo{
+                                    background-color: $rojo03;
+
+                                        i{
+                                            color: $rojo01;
+                                        }
+                                }
+                                
+                                .azul{
+                                    background-color: $azul05;
+
+                                        i{
+                                            color: $azul01;
+                                        }
+                                }
+
+                                .amarillo{
+                                    background-color: $amarillo02;
+
+                                        i{
+                                            color: $amarillo01;
+                                        }
+                                }
+
+                                .gris{
+                                    background-color: $azul06;
+
+                                        i{
+                                            color: $morado01;
+                                        }
+                                }                            
+                        }
+                }
+        }
+}
