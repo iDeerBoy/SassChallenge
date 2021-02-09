@@ -379,4 +379,462 @@ body {
 #banner .bannerL .sjab ul .gris i {
   color: #07003b;
 }
+
+#tarjetas {
+  width: 100%;
+  height: 1860px;
+  background-color: #f0f5fc;
+  padding: 160px 228px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#tarjetas .txt {
+  width: 525px;
+}
+
+#tarjetas .txt p:first-child {
+  font-size: 12px;
+  font-weight: 700;
+  color: #3c50e0;
+  margin-bottom: 45px;
+}
+
+#tarjetas .txt h2 {
+  font-size: 60px;
+  color: #07003b;
+  margin-bottom: 35px;
+}
+
+#tarjetas .txt p:last-child {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7b86a3;
+}
+
+#tarjetas .tarjeta {
+  width: 525px;
+  height: 645px;
+  background-color: #fff;
+  border-radius: 25px;
+  margin-bottom: 80px;
+  position: relative;
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tarjetas .tarjeta h4 {
+  font-size: 40px;
+  color: #07003b;
+  text-align: center;
+  margin: 70px 0 40px;
+}
+
+#tarjetas .tarjeta p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #7b86a3;
+  text-align: center;
+}
+
+#tarjetas .rete {
+  padding-top: 120px;
+  top: 140px;
+}
+
+#tarjetas .rete .barras {
+  width: 300px;
+  height: 240px;
+  padding: 0 35px 35px;
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#tarjetas .rete .barras div {
+  width: 35px;
+  height: 135px;
+  background-color: #3c50e0;
+  border-radius: 5px;
+  -webkit-animation-name: barrasAnimadas;
+          animation-name: barrasAnimadas;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#tarjetas .rete .barras div:nth-child(1) {
+  -webkit-animation-duration: 2.3s;
+          animation-duration: 2.3s;
+}
+
+#tarjetas .rete .barras div:nth-child(2) {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+#tarjetas .rete .barras div:nth-child(3) {
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+#tarjetas .rete .barras div:nth-child(4) {
+  -webkit-animation-duration: 3.3s;
+          animation-duration: 3.3s;
+}
+
+#tarjetas .rete .barras div:nth-child(5) {
+  -webkit-animation-duration: 2.8s;
+          animation-duration: 2.8s;
+}
+
+#tarjetas .rete .torta {
+  width: 110px;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 90px;
+  left: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tarjetas .rete .torta div {
+  width: 35px;
+  height: 70px;
+}
+
+#tarjetas .rete .torta div:first-child {
+  background-color: #3c50e0;
+  border-radius: 100px 0 0 100px;
+}
+
+#tarjetas .rete .torta div:last-child {
+  background-color: #ff5670;
+  border-radius: 0 100px 100px 0;
+}
+
+#tarjetas .afs {
+  padding-top: 90px;
+  top: -240px;
+}
+
+#tarjetas .afs .contenedor-calendario {
+  width: 365px;
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#tarjetas .afs .contenedor-calendario div .calendario {
+  width: 133px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tarjetas .afs .contenedor-calendario div .calendario:last-child {
+  -webkit-animation-name: calendarioAnimado;
+          animation-name: calendarioAnimado;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+#tarjetas .afs .contenedor-calendario div .calendario:last-child p {
+  -webkit-animation-name: calendarioAnimado;
+          animation-name: calendarioAnimado;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+#tarjetas .afs .contenedor-calendario div .calendario p {
+  font-size: 30px;
+  color: #fcb300;
+  text-align: left;
+  margin: 0 16px;
+}
+
+#tarjetas .afs .contenedor-calendario div .calendario div .linea01 {
+  width: 62px;
+  height: 6px;
+  background-color: #fcb300;
+  border-radius: 15px;
+  margin-bottom: 8px;
+}
+
+#tarjetas .afs .contenedor-calendario div .calendario div .linea02 {
+  width: 31px;
+  height: 6px;
+  background-color: #fcb300;
+  border-radius: 15px;
+}
+
+#tarjetas .afs .contenedor-calendario div .calendario:last-child .linea01 {
+  -webkit-animation-name: calendarioBarra;
+          animation-name: calendarioBarra;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+#tarjetas .afs .contenedor-calendario div .calendario:last-child .linea02 {
+  -webkit-animation-name: calendarioBarra;
+          animation-name: calendarioBarra;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos {
+  width: 211px;
+  height: 253px;
+  border: 2px solid #e4e7f6;
+  border-radius: 20px;
+  margin-left: 15px;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo01 {
+  width: 98px;
+  height: 8px;
+  border-radius: 15px;
+  background-color: #e4e7f6;
+  margin: 29px auto 0 auto;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo02 {
+  width: 162px;
+  height: 61px;
+  border-radius: 10px;
+  background-color: #f5f6f9;
+  margin: 22px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo02 i {
+  font-size: 24px;
+  color: #bdc4d7;
+  margin: 0 19px 0 23px;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo02 div .lineas-dialogos {
+  width: 74px;
+  height: 6px;
+  background-color: #bdc4d7;
+  border-radius: 15px;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo02 div .lineas-dialogos:last-child {
+  width: 43px;
+  margin-top: 8px;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo03 {
+  width: 162px;
+  height: 101px;
+  border-radius: 10px;
+  background-color: #f5f6f9;
+  margin: 13px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 21px;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo03 i {
+  font-size: 24px;
+  color: #bdc4d7;
+  margin: 0 19px 0 23px;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo03 div .lineas-dialogos {
+  height: 6px;
+  background-color: #bdc4d7;
+  border-radius: 15px;
+  margin-bottom: 8px;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo03 div .lineas-dialogos:nth-child(1) {
+  width: 73px;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo03 div .lineas-dialogos:nth-child(2) {
+  width: 42px;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo03 div .lineas-dialogos:nth-child(3) {
+  width: 80px;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo03 div .lineas-dialogos:nth-child(4) {
+  width: 26px;
+}
+
+#tarjetas .afs .contenedor-calendario .dialogos .dialogo03 div .lineas-dialogos:nth-child(5) {
+  width: 42px;
+}
+
+#tarjetas .hand {
+  top: 140px;
+}
+
+#tarjetas .email {
+  top: -240px;
+}
+
+@-webkit-keyframes barrasAnimadas {
+  0% {
+    height: 10px;
+  }
+  50% {
+    height: 135px;
+  }
+  100% {
+    height: 10px;
+  }
+}
+
+@keyframes barrasAnimadas {
+  0% {
+    height: 10px;
+  }
+  50% {
+    height: 135px;
+  }
+  100% {
+    height: 10px;
+  }
+}
+
+@-webkit-keyframes calendarioAnimado {
+  0% {
+    background-color: #fff;
+    color: #fcb300;
+  }
+  50% {
+    background-color: #fcb300;
+    color: #fff;
+  }
+  100% {
+    background-color: #fff;
+    color: #fcb300;
+  }
+}
+
+@keyframes calendarioAnimado {
+  0% {
+    background-color: #fff;
+    color: #fcb300;
+  }
+  50% {
+    background-color: #fcb300;
+    color: #fff;
+  }
+  100% {
+    background-color: #fff;
+    color: #fcb300;
+  }
+}
+
+@-webkit-keyframes calendarioBarra {
+  0% {
+    background-color: #fcb300;
+  }
+  50% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fcb300;
+  }
+}
+
+@keyframes calendarioBarra {
+  0% {
+    background-color: #fcb300;
+  }
+  50% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #fcb300;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

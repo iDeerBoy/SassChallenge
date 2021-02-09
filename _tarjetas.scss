@@ -1,0 +1,363 @@
+#tarjetas{
+    width: 100%;
+    height: 1860px;
+    background-color: $azul05;
+    padding: 160px 228px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+        .txt{
+            width: 525px;
+
+                p:first-child{
+                    font-size: 12px;
+                    font-weight: 700;
+                    color: $azul01;
+                    margin-bottom: 45px;
+                }
+
+                h2{
+                    font-size: 60px;
+                    color: $morado01;
+                    margin-bottom: 35px;
+                }
+
+                p:last-child{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $azul02;
+                }
+        }
+
+        .tarjeta{
+            width: 525px;
+            height: 645px;
+            background-color: $blanco;
+            border-radius: 25px;
+            margin-bottom: 80px;
+            position: relative;
+            box-shadow: 5px 5px 15px  rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            h4{
+                font-size: 40px;
+                color: $morado01;
+                text-align: center;
+                margin: 70px 0 40px;
+            }
+
+            p{                
+                font-size: 18px;
+                font-weight: 500;
+                color: $azul02;
+                text-align: center;
+            }
+        }
+
+        .rete{
+            padding-top: 120px;
+            top: 140px;
+
+                .barras {
+                    width: 300px;
+                    height: 240px;
+                    padding:0 35px 35px;
+                    background-color: $blanco;
+                    border-radius: 20px;
+                    box-shadow: 1px 0px 20px  rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    div{
+                        width: 35px;
+                        height: 135px;
+                        background-color: $azul01;
+                        border-radius: 5px;
+                        animation-name: barrasAnimadas;
+                        animation-iteration-count: infinite ;
+                    }
+
+                    div:nth-child(1){
+                        animation-duration: 2.3s;
+                    }
+
+                    div:nth-child(2){
+                        animation-duration: 3s;
+                    }
+
+                    div:nth-child(3){
+                        animation-duration: 2.5s;
+                    }
+
+                    div:nth-child(4){
+                        animation-duration: 3.3s;
+                    }
+
+                    div:nth-child(5){
+                        animation-duration: 2.8s;
+                    }
+
+                } 
+                
+                .torta {
+                    width: 110px;
+                    height: 110px;
+                    background-color: $blanco;
+                    border-radius: 15px;
+                    box-shadow: 10px 10px 20px  rgba(0, 0, 0, 0.2);
+                    position: absolute;
+                    top: 90px;
+                    left: 350px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+
+                        div {
+                            width: 35px;
+                            height: 70px;
+
+
+                                &:first-child{
+                                    background-color: $azul01;
+                                    border-radius: 100px 0 0 100px;
+                                }
+
+                                &:last-child{
+                                    background-color: $rojo01;
+                                    border-radius: 0 100px 100px 0;
+                                }
+                        }
+                        
+                }
+                
+        }
+
+        .afs{
+            padding-top: 90px;
+            top: -240px;
+
+               .contenedor-calendario{
+                   width: 365px;
+                   height: 260px;
+                   display: flex;
+                   flex-direction: row;
+                   justify-content: center;
+
+                   div {
+                       .calendario{
+                           width: 133px;
+                           height: 70px;
+                           background-color: $blanco;
+                           border-radius: 15px;
+                           margin-bottom: 20px;
+                           box-shadow: 1px 1px 20px  rgba(0, 0, 0, 0.1);
+                           display: flex;
+                           align-items: center;
+
+                            &:last-child{
+                                animation-name: calendarioAnimado;
+                                animation-iteration-count: infinite;
+                                animation-duration: 4s;
+                                
+                                    p{
+                                        animation-name: calendarioAnimado;
+                                        animation-iteration-count: infinite;
+                                        animation-duration: 4s;}
+                            }
+
+                            p{
+                                font-size: 30px;
+                                color: $amarillo01;
+                                text-align: left;
+                                margin: 0 16px;
+                            }
+
+                            div{
+                                .linea01{
+                                    width: 62px;
+                                    height: 6px;
+                                    background-color: $amarillo01;
+                                    border-radius: 15px;
+                                    margin-bottom: 8px;
+                                }
+
+                                .linea02{
+                                    width: 31px;
+                                    height: 6px;
+                                    background-color: $amarillo01;
+                                    border-radius: 15px;
+                                }
+                            }
+
+                            &:last-child{
+
+                                .linea01{                                        
+                                    animation-name: calendarioBarra;
+                                    animation-iteration-count: infinite;
+                                    animation-duration: 4s;
+                                }
+
+                                .linea02{
+                                    animation-name: calendarioBarra;
+                                    animation-iteration-count: infinite;
+                                    animation-duration: 4s;
+                                }
+                            }
+                       }
+                   }
+
+                   .dialogos{
+                       width: 211px;
+                       height: 253px;
+                       border: 2px solid $gris03;
+                       border-radius: 20px;
+                       margin-left: 15px;
+                    
+                            .dialogo01{
+                                width: 98px;
+                                height: 8px;
+                                border-radius: 15px;
+                                background-color: $gris03;
+                                margin: 29px auto 0 auto;
+                            }
+
+                            .dialogo02{
+                                width: 162px;
+                                height: 61px;
+                                border-radius: 10px;
+                                background-color: $gris02;
+                                margin: 22px auto 0 auto;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+
+                                    i {
+                                        font-size: 24px;
+                                        color: $gris01;
+                                        margin: 0 19px 0 23px;
+                                    }
+
+                                    div{
+                                        .lineas-dialogos{
+                                            width: 74px;
+                                            height: 6px;
+                                            background-color: $gris01;
+                                            border-radius: 15px;
+
+                                                &:last-child{
+                                                    width: 43px;
+                                                    margin-top: 8px;
+                                                }
+                                        }
+                                    }
+                            }
+
+                            .dialogo03{
+                                width: 162px;
+                                height: 101px;
+                                border-radius: 10px;
+                                background-color: $gris02;
+                                margin: 13px auto 0 auto;
+                                display: flex;
+                                flex-direction: row;
+                                padding-top: 21px;
+
+                                    i {
+                                        font-size: 24px;
+                                        color: $gris01;
+                                        margin: 0 19px 0 23px;
+                                    }
+
+                                    div{
+                                        .lineas-dialogos{
+                                            height: 6px;
+                                            background-color: $gris01;
+                                            border-radius: 15px;
+                                            margin-bottom: 8px;
+
+                                                &:nth-child(1){
+                                                    width: 73px;
+                                                }
+
+                                                &:nth-child(2){
+                                                    width: 42px;
+                                                }
+
+                                                &:nth-child(3){
+                                                    width: 80px;
+                                                }
+
+                                                &:nth-child(4){
+                                                    width: 26px;
+                                                }
+
+                                                &:nth-child(5){
+                                                    width: 42px;
+                                                }                                                                                          
+                                        }
+                                    }
+                            }
+                   }
+               }     
+
+        }
+
+        .hand{
+            top: 140px;
+        }
+
+        .email{
+            top: -240px;
+        }
+}
+
+@keyframes barrasAnimadas {
+    0% {
+        height: 10px;
+    }
+
+    50% {
+        height: 135px;
+    }
+
+    100% {
+        height: 10px;
+    }
+}
+
+@keyframes calendarioAnimado {
+    0% {
+        background-color: $blanco;
+        color: $amarillo01;
+    }
+
+    50% {
+        background-color: $amarillo01;
+        color: $blanco;
+    }
+
+    100% {
+        background-color: $blanco;
+        color: $amarillo01;
+    }
+}
+
+@keyframes calendarioBarra{
+    0% {
+        background-color: $amarillo01;
+    }
+
+    50% {
+        background-color: $blanco;
+    }
+
+    100% {
+        background-color: $amarillo01;
+    }
+}
