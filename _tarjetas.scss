@@ -1,6 +1,7 @@
 #tarjetas{
     width: 100%;
     height: 1860px;
+    position: relative;
     background-color: $azul05;
     padding: 160px 228px 0;
     display: flex;
@@ -51,6 +52,7 @@
 
             p{                
                 font-size: 18px;
+                line-height: 28px;
                 font-weight: 500;
                 color: $azul02;
                 text-align: center;
@@ -310,10 +312,173 @@
 
         .hand{
             top: 140px;
+            padding-top: 80px;
+            align-items: initial;
+
+                .tools{
+                    width: 234px;
+                    height: 70px;
+                    border-radius: 20px;
+                    border: 2px solid $gris03;
+                    margin-left: 110px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                        div{
+                            background-color: $gris01;
+
+                                &:first-child{
+                                    width: 38px;
+                                    height: 38px;
+                                    border-radius: 10px;
+                                    margin: 0 15px;
+                                }
+
+                                &:last-child{
+                                    width: 120px;
+                                    height: 10px;
+                                    border-radius: 10px;
+                                }
+                        }
+
+                        &:nth-child(2){
+                            width: 290px;
+                            height: 80px;
+                            background-color: $rojo01;
+                            border: $rojo01;
+                            margin: 20px 0 20px 150px;
+                            box-shadow: 1px 1px 15px  rgba(0, 0, 0, 0.1);
+
+                                div:first-child {
+                                    background-color: $blanco;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+
+                                }
+
+                                div:last-child{
+                                    background-color: $blanco;
+                                    width: 177px;
+                                }
+
+                                i {
+                                    font-size: 20px;
+                                    color: $rojo01;
+                                    animation-name: toolAnimada;
+                                    animation-iteration-count: infinite;
+                                    animation-duration: 4s;
+                                }
+                        }
+                }
         }
 
         .email{
             top: -240px;
+            padding-top: 92px;
+
+                .emailLineas{
+                    width: 280px;
+                    height: 158px;
+                    border-radius: 40px 40px 40px 0;
+                    box-shadow: 1px 1px 15px  rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 15px;
+
+                        div{
+                            height: 9px;
+                            border-radius: 10px;
+                            background-color: $gris01;
+                            margin-left: 44px;
+                            margin-bottom: 17px;
+
+                                &:nth-child(1){
+                                    width: 130px;
+                                }
+
+                                &:nth-child(2){
+                                    width: 190px;
+                                }
+
+                                &:nth-child(3){
+                                    width: 85px;
+                                }
+
+                                &:nth-child(4){
+                                    width: 130px;
+                                    margin-bottom: 0;
+                                }
+                        }
+                }
+
+                .emailAzul{
+                    width: 276px;
+                    height: 90px;
+                    border-radius: 20px;
+                    background-color: $azul01;
+                    box-shadow: 1px 1px 15px  rgba(0, 0, 0, 0.1);
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                        div:first-child{
+                            width: 52px;
+                            height: 52px;
+                            border-radius: 15px;
+                            margin: 0 20px;
+                            background-color: $blanco;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;                            
+                        }
+
+                        i{
+                            font-size: 20px;
+                            color: $azul01;
+                            animation: iAnimado infinite 4s;
+                        }
+
+                        div:last-child{
+                            width: 145px;
+                            height: 10px;
+                            background-color: $blanco;
+                            border-radius: 10px;
+                            animation: emailAnimado infinite 4s;
+                        }
+                }
+        }
+
+        .fomra01{
+            width: 45px;
+            height: 45px;
+            background-color: $amarillo03;
+            border-radius: 100%;
+            position: absolute;
+            top: 109px;
+            left: 922px;
+        }
+
+        .fomra02{
+            width: 45px;
+            height: 45px;
+            background-color: $azul04;
+            border-radius: 100% 100% 100% 0;
+            position: absolute;
+            top: 945px;
+            right: 147px;
+        }
+
+        .fomra03{
+            width: 45px;
+            height: 45px;
+            background-color: $rojo02;
+            clip-path: circle(100% at 100% 100%);
+            position: absolute;
+            top: 1325px;
+            left: 115px;
         }
 }
 
@@ -359,5 +524,45 @@
 
     100% {
         background-color: $amarillo01;
+    }
+}
+
+@keyframes toolAnimada{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);}
+}
+
+@keyframes emailAnimado {
+    0% {
+        width: 10px;
+        opacity: 10%;
+    }
+
+    50% {
+        width: 145px;
+        opacity: 100%;
+    }
+
+    100% {
+        width: 10px;
+        opacity: 10%;
+    }
+}
+
+@keyframes iAnimado {
+    0% {
+        opacity: 10%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 10%;
     }
 }

@@ -383,6 +383,7 @@ body {
 #tarjetas {
   width: 100%;
   height: 1860px;
+  position: relative;
   background-color: #f0f5fc;
   padding: 160px 228px 0;
   display: -webkit-box;
@@ -448,6 +449,7 @@ body {
 
 #tarjetas .tarjeta p {
   font-size: 18px;
+  line-height: 28px;
   font-weight: 500;
   color: #7b86a3;
   text-align: center;
@@ -754,10 +756,185 @@ body {
 
 #tarjetas .hand {
   top: 140px;
+  padding-top: 80px;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+}
+
+#tarjetas .hand .tools {
+  width: 234px;
+  height: 70px;
+  border-radius: 20px;
+  border: 2px solid #e4e7f6;
+  margin-left: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tarjetas .hand .tools div {
+  background-color: #bdc4d7;
+}
+
+#tarjetas .hand .tools div:first-child {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  margin: 0 15px;
+}
+
+#tarjetas .hand .tools div:last-child {
+  width: 120px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+#tarjetas .hand .tools:nth-child(2) {
+  width: 290px;
+  height: 80px;
+  background-color: #ff5670;
+  border: #ff5670;
+  margin: 20px 0 20px 150px;
+  -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+#tarjetas .hand .tools:nth-child(2) div:first-child {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tarjetas .hand .tools:nth-child(2) div:last-child {
+  background-color: #fff;
+  width: 177px;
+}
+
+#tarjetas .hand .tools:nth-child(2) i {
+  font-size: 20px;
+  color: #ff5670;
+  -webkit-animation-name: toolAnimada;
+          animation-name: toolAnimada;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 #tarjetas .email {
   top: -240px;
+  padding-top: 92px;
+}
+
+#tarjetas .email .emailLineas {
+  width: 280px;
+  height: 158px;
+  border-radius: 40px 40px 40px 0;
+  -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+#tarjetas .email .emailLineas div {
+  height: 9px;
+  border-radius: 10px;
+  background-color: #bdc4d7;
+  margin-left: 44px;
+  margin-bottom: 17px;
+}
+
+#tarjetas .email .emailLineas div:nth-child(1) {
+  width: 130px;
+}
+
+#tarjetas .email .emailLineas div:nth-child(2) {
+  width: 190px;
+}
+
+#tarjetas .email .emailLineas div:nth-child(3) {
+  width: 85px;
+}
+
+#tarjetas .email .emailLineas div:nth-child(4) {
+  width: 130px;
+  margin-bottom: 0;
+}
+
+#tarjetas .email .emailAzul {
+  width: 276px;
+  height: 90px;
+  border-radius: 20px;
+  background-color: #3c50e0;
+  -webkit-box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tarjetas .email .emailAzul div:first-child {
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
+  margin: 0 20px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tarjetas .email .emailAzul i {
+  font-size: 20px;
+  color: #3c50e0;
+  -webkit-animation: iAnimado infinite 4s;
+          animation: iAnimado infinite 4s;
+}
+
+#tarjetas .email .emailAzul div:last-child {
+  width: 145px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-animation: emailAnimado infinite 4s;
+          animation: emailAnimado infinite 4s;
 }
 
 @-webkit-keyframes barrasAnimadas {
@@ -836,5 +1013,107 @@ body {
   100% {
     background-color: #fcb300;
   }
+}
+
+@-webkit-keyframes toolAnimada {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes toolAnimada {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes emailAnimado {
+  0% {
+    width: 10px;
+    opacity: 10%;
+  }
+  50% {
+    width: 145px;
+    opacity: 100%;
+  }
+  100% {
+    width: 10px;
+    opacity: 10%;
+  }
+}
+
+@keyframes emailAnimado {
+  0% {
+    width: 10px;
+    opacity: 10%;
+  }
+  50% {
+    width: 145px;
+    opacity: 100%;
+  }
+  100% {
+    width: 10px;
+    opacity: 10%;
+  }
+}
+
+@-webkit-keyframes iAnimado {
+  0% {
+    opacity: 10%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 10%;
+  }
+}
+
+@keyframes iAnimado {
+  0% {
+    opacity: 10%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 10%;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #07003b;
+  padding: 220px 0 100px;
+}
+
+footer h4 {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 35px;
+  color: #fff;
+}
+
+footer a {
+  color: #fcb300;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffbcbd;
 }
 /*# sourceMappingURL=styles.css.map */
