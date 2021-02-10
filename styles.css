@@ -937,6 +937,37 @@ body {
           animation: emailAnimado infinite 4s;
 }
 
+#tarjetas .fomra01 {
+  width: 45px;
+  height: 45px;
+  background-color: #ffdc97;
+  border-radius: 100%;
+  position: absolute;
+  top: 109px;
+  left: 922px;
+}
+
+#tarjetas .fomra02 {
+  width: 45px;
+  height: 45px;
+  background-color: #dfe7ff;
+  border-radius: 100% 100% 100% 0;
+  position: absolute;
+  top: 945px;
+  right: 147px;
+}
+
+#tarjetas .fomra03 {
+  width: 45px;
+  height: 45px;
+  background-color: #ffbcbd;
+  -webkit-clip-path: circle(100% at 100% 100%);
+          clip-path: circle(100% at 100% 100%);
+  position: absolute;
+  top: 1325px;
+  left: 115px;
+}
+
 @-webkit-keyframes barrasAnimadas {
   0% {
     height: 10px;
